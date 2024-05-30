@@ -84,13 +84,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started && IsGrounded())
-        {
-            Debug.Log("Jump input received and player is grounded.");
-            rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
-        }
+        rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
     }
 
+    /* 작동 안함.
     bool IsGrounded()
     {
         Ray[] rays = new Ray[4]
@@ -105,10 +102,10 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(rays[i], 0.1f, groundLayerMask))
             {
-                Debug.Log("Grounded: " + rays[i].origin);
                 return true;
             }
         }
         return false;
     }
+    */
 }

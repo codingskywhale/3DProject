@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 185449636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -564,9 +564,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.1647954
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.4242556, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1844131723
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -575,7 +575,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844131720}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -606,11 +606,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f20033e14d9b0d439620994e8782fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpPower: 5
+  moveSpeed: 5
+  jumpPower: 100
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   cameraContainer: {fileID: 185449637}
   minXLook: -85
   maxXLook: 85
